@@ -3,53 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Türkçe Sözlük - Bayrak</title>
-    <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            text-align: center; 
-            background-color: #f4f4f9; 
-            padding: 40px 20px; 
-        }
-        .card { 
-            background: white; 
-            padding: 30px; 
-            border-radius: 12px; 
-            display: inline-block; 
-            box-shadow: 0px 4px 15px rgba(0,0,0,0.1); 
-            max-width: 500px;
-            width: 100%;
-        }
-        img { 
-            max-width: 100%; 
-            border-radius: 8px; 
-            margin: 15px 0;
-        }
-        h1 { 
-            color: #d9534f; 
-            font-size: 2.5rem;
-            margin-bottom: 5px;
-        }
-        p {
-            font-size: 1.2rem;
-            color: #444;
-        }
-        .video-container {
-            margin-top: 20px;
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Oranı */
-            height: 0;
-            overflow: hidden;
-            border-radius: 8px;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-    </style>
+<style>
+    body { 
+        font-family: Arial, sans-serif; 
+        background-color: #f4f4f9; 
+        margin: 0;
+        padding: 20px;
+        /* Telefon ve bilgisayarda dikey ve yatay ortalamak için: */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .card { 
+        background: white; 
+        padding: 30px; 
+        border-radius: 12px; 
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.1); 
+        max-width: 400px;
+        width: 100%;
+        text-align: center; /* İçindeki yazı ve görselleri ortalar */
+    }
+    img { 
+        max-width: 100%; 
+        height: auto;
+        border-radius: 8px; 
+        margin: 15px 0;
+    }
+    h1 { 
+        color: #d9534f; 
+        font-size: 2.2rem;
+        margin-bottom: 5px;
+    }
+    p {
+        font-size: 1.1rem;
+        color: #444;
+    }
+</style>
 </head>
 <body>
     <div class="card">
