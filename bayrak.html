@@ -10,7 +10,6 @@
             background-color: #f4f4f9; 
             margin: 0;
             padding: 20px;
-            /* Telefon ve bilgisayarda dikey ve yatay ortalamak için: */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,7 +22,7 @@
             box-shadow: 0px 4px 15px rgba(0,0,0,0.1); 
             max-width: 400px;
             width: 100%;
-            text-align: center; /* İçindeki yazı ve görselleri ortalar */
+            text-align: center;
         }
         img { 
             max-width: 100%; 
@@ -40,12 +39,9 @@
             font-size: 1.1rem;
             color: #444;
         }
-        .video-container {
-            margin-top: 15px;
-            position: relative;
+        audio {
             width: 100%;
-            border-radius: 8px;
-            overflow: hidden;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -54,11 +50,14 @@
         <h1>Bayrak</h1>
         <p><b>Anlamı:</b> Bir ülkenin egemenlik simgesi olan renkli kumaş.</p>
         
+        <!-- Görselin -->
         <img src="flag.png" alt="Bayrak görseli">
         
-        <div class="video-container">
-            <iframe width="100%" height="220" src="https://www.youtube.com/embed/ZgWu6_J7jtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+        <!-- Bilgisayardan yüklediğin ses dosyası (istiklal.mp3 yerine kendi dosya adını yazabilirsin) -->
+        <audio controls>
+            <source src="istanbul.mp3" type="audio/mpeg">
+            Tarayıcınız ses oynatıcısını desteklemiyor.
+        </audio>
     </div>
 </body>
 </html>
